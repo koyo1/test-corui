@@ -1,0 +1,29 @@
+label { 
+  font-weight: bold;
+}
+.form-control:focus {
+  border-color: #3f7cd5!important;
+  box-shadow: 0 0 0 0.2rem rgba(65, 165, 238, 1)!important;
+} 
+
+.title {
+  margin-bottom: 50px;
+  color: #636363;
+}
+.input-group{
+  margin-bottom: 50px!important;
+}
+label {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.input-group-prepend { 
+  background-color:#3f7cd5!important ;
+  color: white;
+}
+#costumFile {
+  background-color: #3f7cd5!important;
+  color: white;
+
+}
