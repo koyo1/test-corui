@@ -25,5 +25,15 @@ label {
 #costumFile {
   background-color: #3f7cd5!important;
   color: white;
+}
+.logo-etab{
+  width: 155px;
+  height: 130px;
+  border: 2px solid #3f7cd5;
+  display: block;
+  margin: 10px;
+}
 
+.logo-input{
+  display: none;
 }

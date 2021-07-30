@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import './style_ajout_ens.css';
+import './styles/style_ajout_ens.css';
 
-import {FaUserAlt,FaPhoneAlt,FaMoneyCheck} from "react-icons/fa";
+import {FaRegSave,FaCloudUploadAlt,FaUserAlt,FaPhoneAlt,FaMoneyCheck} from "react-icons/fa";
 import {HiMail} from "react-icons/hi";
 import { IconContext } from 'react-icons/lib';
+import LogoEtab from '../images/etab_logo.jpg';
+
 class Form extends Component {
     render() {
         return (
@@ -78,14 +80,17 @@ class Form extends Component {
   </div>
   </div>
   <div className="col-sm-4">
-<div className="row">
-      <label className=""> <br></br></label>
-  </div>
-  <div className='input-group'>
-    <input type="file" className="form-control" id="costumFile" />
-  </div>
+      <label htmlFor="logo">Logo de l'établissement:</label>
+      <img src={ LogoEtab } className="logo-etab" id="logo" alt="logo-etab" />
+      <label htmlFor="logo-input" className="btn btn-outline-primary"><FaCloudUploadAlt /> Parcourir</label>
+      <input type="file" className="logo-input" id="logo-input" />
   </div>
   </div>
+  <div className="row mt-5">
+                        <div className="col d-flex flex-column align-items-center">
+                            <button type="submit" className="btn btn-primary"><FaRegSave /> Enregistrer</button>
+                        </div>
+                    </div>
   </form>
   </div>
   </IconContext.Provider>
